@@ -294,23 +294,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (!otherAudio.paused) {
                         otherAudio.pause();
                         const otherButton = otherAudio.closest('.music-popup').querySelector('.music-button');
-                        otherButton.textContent = 'Слушать';
+                        otherButton.textContent = 'Play';
                         otherButton.classList.remove('playing');
                     }
                 });
 
                 audio.play();
-                button.textContent = 'Остановить';
+                button.textContent = 'Stop';
                 button.classList.add('playing');
             } else {
                 audio.pause();
-                button.textContent = 'Слушать';
+                button.textContent = "Play";
                 button.classList.remove('playing');
             }
         });
 
         audio.addEventListener('ended', () => {
-            button.textContent = 'Слушать';
+            button.textContent = "Play";
             button.classList.remove('playing');
         });
     });
