@@ -240,12 +240,6 @@ backing.addEventListener('click', (evt) => {
     backing.classList.remove('show');
     stopPopup.classList.remove('show');
     cardPopup.classList.remove('show');
-    sanysPopup.classList.remove('show');
-    chizhPopup.classList.remove('show');
-    donPopup.classList.remove('show');
-    omskPopup.classList.remove('show');
-    kazanPopup.classList.remove('show');
-    tumenPopup.classList.remove('show');
     body.classList.remove('no-scroll');
 });
 
